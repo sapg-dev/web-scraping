@@ -24,7 +24,7 @@ while True:
 
     # Find apartment links with specific id attributes
     apartment_links = driver.find_elements(By.CSS_SELECTOR, 'a[id^="link-result-item-"][category="Location"]')
-
+    
     # Extract and store the href attributes
     for link in apartment_links:
         href = link.get_attribute("href")
@@ -40,10 +40,10 @@ while True:
         # If 'Next' button is not found, exit the loop
         print("Collected all apartment URLs.")
         break
-
+        driver.quit()
 # Loop through the collected URLs and scrape details
 for url in all_apartment_urls:
     scrape_apartment_details(url)
 
 # Close the driver
-driver.quit()
+

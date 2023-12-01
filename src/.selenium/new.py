@@ -21,7 +21,7 @@ def scrape_apartment_details(url):
         driver.get(url)
 
         # Wait for the dynamic content to load
-        time.sleep(10)  # Adjust this time based on your internet speed
+        time.sleep(3)  # Adjust this time based on your internet speed
 
         # Extract details
         address_elements = driver.find_elements(By.CLASS_NAME, 'object-address')
@@ -139,3 +139,4 @@ def scrape_apartment_details(url):
         print(f"An error occurred: {e}")
 
 # Example usage:
+
