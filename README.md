@@ -27,4 +27,4 @@ You can install the required Python packages using pip:
 pip install selenium beautifulsoup4 webdriver-manager
 
 
-Thanks to Laurent Piano for supporting the development LPP
+
